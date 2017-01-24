@@ -28,24 +28,37 @@ Amazon AWS
 
 
 -Installation 
+
+
 gem install github-markup
 
 
 -Example Code
+
+
+
 Spark also comes with several sample programs in the examples directory. To run one of them, use ./bin/run-example <class> [params]. For example:
 ./bin/run-example SparkPi will run the Pi example locally.
 You can set the MASTER environment variable when running examples to submit examples to a cluster. This can be a mesos:// or spark:// URL, "yarn" to run on YARN, and "local" to run locally with one thread, or "local[N]" to run locally with N threads. You can also use an abbreviated class name if the class is in the examples package. For instance:
 MASTER=spark://host:7077 ./bin/run-example SparkPi
 
+
+
 -Running the Project
+
+
 The easiest way to start using Spark is through the Scala shell:
 ./bin/spark-shell
 
 
 Try the following command, which should return 1000:
+
+
 scala> sc.parallelize(1 to 1000).count()
 
 -Change Log
+
+
 This project adheres to Semantic Versioning.
 Every release, along with the migration instructions, is documented on the Github Releases page.
 
