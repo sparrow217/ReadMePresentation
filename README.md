@@ -71,6 +71,8 @@ Ximedes
 See the full list of Redux patrons.
 
 -License
+
+
 MIT
 
 
